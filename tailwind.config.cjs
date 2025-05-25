@@ -13,6 +13,10 @@ module.exports = {
   			ring: 'hsl(var(--ring))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+        brand: {
+          yellow: '#FDDC57',
+          blue: '#3EA5AA',
+        },
   			primary: {
   				'50': '#f0f9ff',
   				'100': '#e0f2fe',
@@ -83,7 +87,12 @@ module.exports = {
   		},
   		fontFamily: {
   			sans: [
+  				'Montserrat',
   				'Inter var',
+  				'sans-serif'
+  			],
+  			body: [
+  				'Open Sans', 
   				'sans-serif'
   			]
   		},
@@ -137,4 +146,4 @@ module.exports = {
   	}
   },
   plugins: [require("tailwindcss-animate")],
-} 
+}

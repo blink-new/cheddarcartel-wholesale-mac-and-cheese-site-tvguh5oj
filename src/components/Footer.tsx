@@ -1,90 +1,133 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
-    <footer className="bg-black text-white pt-16 pb-8">
+    <footer className="bg-cheddar-yellow text-black py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-cheddar-yellow">CheddarCartel</h3>
-            <p className="text-gray-300 mb-4">
-              Premium wholesale Mac &amp; Cheese supplier for UK businesses, delivering quality and consistency for your customers.
+            <img src="/logo.svg" alt="CheddarCartel" className="h-12 mb-4" />
+            <p className="text-black/80 font-sans">
+              Premium wholesale mac & cheese solutions for UK businesses.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-cheddar-yellow transition-colors">
+            <div className="flex space-x-4 mt-6">
+              <a 
+                href="#" 
+                className="text-cheddar-blue hover:text-cheddar-blue/80 transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-cheddar-yellow transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-cheddar-yellow transition-colors">
+              <a 
+                href="#" 
+                className="text-cheddar-blue hover:text-cheddar-blue/80 transition-colors"
+                aria-label="Twitter"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-cheddar-yellow transition-colors">
+              <a 
+                href="#" 
+                className="text-cheddar-blue hover:text-cheddar-blue/80 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="#" 
+                className="text-cheddar-blue hover:text-cheddar-blue/80 transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Home</a>
+                <a href="#" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#products" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Products</a>
+                <a href="#products" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Products
+                </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-cheddar-yellow transition-colors">About Us</a>
+                <a href="#about" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Contact</a>
+                <a href="#contact" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Products</h4>
+            <h3 className="text-lg font-bold mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#products" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Classic Mac &amp; Cheese</a>
+                <a href="#" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Classic Cheddar
+                </a>
               </li>
               <li>
-                <a href="#products" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Truffle Mac &amp; Cheese</a>
+                <a href="#" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Three Cheese Deluxe
+                </a>
               </li>
               <li>
-                <a href="#products" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Smoky Bacon Mac &amp; Cheese</a>
+                <a href="#" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Truffle & Mushroom
+                </a>
               </li>
               <li>
-                <a href="#products" className="text-gray-300 hover:text-cheddar-yellow transition-colors">Wholesale Pricing</a>
+                <a href="#" className="text-black/80 hover:text-cheddar-blue transition-colors font-sans">
+                  Custom Solutions
+                </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Contact Information</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <MapPin className="mr-2 h-5 w-5 text-cheddar-yellow flex-shrink-0" />
-                <span className="text-gray-300">123 Cheese Lane, London, UK W1 8XX</span>
-              </li>
-              <li className="flex items-center">
-                <Phone className="mr-2 h-5 w-5 text-cheddar-yellow flex-shrink-0" />
-                <span className="text-gray-300">+44 20 1234 5678</span>
-              </li>
-              <li className="flex items-center">
-                <Mail className="mr-2 h-5 w-5 text-cheddar-yellow flex-shrink-0" />
-                <span className="text-gray-300">info@cheddarcartel.com</span>
-              </li>
-            </ul>
+            <h3 className="text-lg font-bold mb-4">Contact</h3>
+            <address className="not-italic text-black/80 font-sans">
+              Cheddar Cartel Ltd<br />
+              Unit 12, Cheese Business Park<br />
+              Manchester, M1 2AB<br />
+              United Kingdom
+            </address>
+            <p className="mt-4 text-black/80 font-sans">
+              Email: <a href="mailto:sales@cheddarcartel.com" className="hover:text-cheddar-blue">sales@cheddarcartel.com</a>
+            </p>
+            <p className="text-black/80 font-sans">
+              Phone: <a href="tel:+441234567890" className="hover:text-cheddar-blue">+44 (0) 1234 567890</a>
+            </p>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} CheddarCartel. All rights reserved.</p>
+        <hr className="border-black/20 my-8" />
+        
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="text-black/80 text-sm font-sans">
+            &copy; {new Date().getFullYear()} Cheddar Cartel Ltd. All rights reserved.
+          </p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" className="text-black/80 hover:text-cheddar-blue text-sm transition-colors font-sans">
+              Privacy Policy
+            </a>
+            <a href="#" className="text-black/80 hover:text-cheddar-blue text-sm transition-colors font-sans">
+              Terms of Service
+            </a>
+            <a href="#" className="text-black/80 hover:text-cheddar-blue text-sm transition-colors font-sans">
+              Cookie Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>

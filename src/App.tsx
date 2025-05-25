@@ -1,17 +1,19 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Products from "./components/Products";
-import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Products from './components/Products';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <div className="min-h-screen">
+      <Navbar />
       <main>
         <Hero />
         <Products />
-        <ContactForm />
+        <About />
+        <Contact />
       </main>
       <Footer />
     </div>
